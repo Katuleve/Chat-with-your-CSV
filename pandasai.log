@@ -1,0 +1,83 @@
+2023-07-11 09:59:25 [INFO] Question: whai hare the top happiest coutries in kenya?
+
+2023-07-11 09:59:25 [INFO] Running PandasAI with openai LLM...
+2023-07-11 09:59:25 [INFO] Prompt ID: 8c4c7f60-d2f8-4ee2-8312-908ef9488ed8
+2023-07-11 09:59:28 [INFO] 
+                        Code generated:
+                        ```
+                        df[df['Country name'].str.contains('Kenya')].sort_values(by='Ladder score', ascending=False).head()
+                        ```
+                    
+2023-07-11 09:59:28 [INFO] 
+Code running:
+```
+df[df['Country name'].str.contains('Kenya')].sort_values(by='Ladder score',
+    ascending=False).head()
+```
+2023-07-11 09:59:28 [INFO] Answer: 
+2023-07-11 09:59:28 [INFO] Executed in: 2.7212507724761963s
+2023-07-11 10:00:12 [INFO] Question: Watare the top 3 happiest countries?
+
+2023-07-11 10:00:12 [INFO] Running PandasAI with openai LLM...
+2023-07-11 10:00:12 [INFO] Prompt ID: 54732c4c-b079-43fd-8fe8-28afe6a62cdd
+2023-07-11 10:00:14 [INFO] 
+                        Code generated:
+                        ```
+                        df.sort_values(by='Ladder score', ascending=False).head(3)['Country name']
+                        ```
+                    
+2023-07-11 10:00:14 [INFO] 
+Code running:
+```
+df.sort_values(by='Ladder score', ascending=False).head(3)['Country name']
+```
+2023-07-11 10:00:14 [INFO] Answer: 0    Finland
+1    Denmark
+2    Iceland
+Name: Country name, dtype: object
+2023-07-11 10:00:14 [INFO] Executed in: 2.4031691551208496s
+2023-07-11 10:00:31 [INFO] Question: Watare the top 3 happiest countries in Africa?
+
+2023-07-11 10:00:31 [INFO] Running PandasAI with openai LLM...
+2023-07-11 10:00:31 [INFO] Prompt ID: b992eac9-782b-4e13-a74d-6a736bdc707c
+2023-07-11 10:00:34 [INFO] 
+                        Code generated:
+                        ```
+                        df[df['Country name'].str.contains('Africa')].nlargest(3, 'Ladder score')
+                        ```
+                    
+2023-07-11 10:00:34 [INFO] 
+Code running:
+```
+df[df['Country name'].str.contains('Africa')].nlargest(3, 'Ladder score')
+```
+2023-07-11 10:00:34 [INFO] Answer:     Country name  Ladder score  ...  Explained by: Perceptions of corruption  Dystopia + residual
+84  South Africa         5.275  ...                                    0.019                1.708
+
+[1 rows x 19 columns]
+2023-07-11 10:00:34 [INFO] Executed in: 3.2997043132781982s
+2023-07-11 10:01:27 [INFO] Question: what are the top 3 saddest countries?
+
+
+2023-07-11 10:01:27 [INFO] Running PandasAI with openai LLM...
+2023-07-11 10:01:27 [INFO] Prompt ID: 8331d4df-f226-4f10-8170-f4d5792424b5
+2023-07-11 10:01:30 [INFO] 
+                        Code generated:
+                        ```
+                        df.sort_values(by='Ladder score', ascending=True).head(3)['Country name']
+                        ```
+                    
+2023-07-11 10:01:30 [INFO] 
+Code running:
+```
+df.sort_values(by='Ladder score', ascending=True).head(3)['Country name']
+```
+2023-07-11 10:01:30 [INFO] Answer: 136     Afghanistan
+135         Lebanon
+134    Sierra Leone
+Name: Country name, dtype: object
+2023-07-11 10:01:30 [INFO] Executed in: 3.0777182579040527s
+2023-07-11 10:01:57 [INFO] Question: where does kenya rank?
+
+2023-07-11 10:01:57 [INFO] Running PandasAI with openai LLM...
+2023-07-11 10:01:57 [INFO] Prompt ID: e2e0cf0a-1629-4712-a956-8f8b675bb87e
